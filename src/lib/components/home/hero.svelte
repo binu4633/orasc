@@ -7,7 +7,7 @@
     //   let  videoBox ;
     //   onMount(()=>{
 
-    //       console.log('video element', videoBox)
+
     //       videoBox.play()
     //   })
 </script>

@@ -31,7 +31,7 @@ const enquirySchema = new Schema<IEnquiry>({
   }
 )
 
-const Enquiry =   mongoose.model<IEnquiry>('Enquiry', enquirySchema)
+const Enquiry = mongoose.models.Enquiry ||  mongoose.model<IEnquiry>('Enquiry', enquirySchema)
 
 
 export default Enquiry;

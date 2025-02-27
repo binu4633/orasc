@@ -1,3 +1,5 @@
+import { transform } from 'typescript';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{html,js,svelte,ts}"],
@@ -22,6 +24,7 @@ export default {
       colors: {
         primary: "#9E5914",
         "primary-dark": "#532E0A",
+        "primary-compliment":'#0A2F53',
         "slate-gray": "#6D6D6D",
         "pale-blue": "#F5F6FF",
         "white-400": "rgba(255, 255, 255, 0.80)",
@@ -29,6 +32,20 @@ export default {
       boxShadow: {
         "3xl": "0 10px 40px rgba(0, 0, 0, 0.5)",
       },
+      keyframes: {
+        sizeAnim:{
+          '50%':{
+            transform:"scale(1.05)"
+          },
+          '100%':{
+            transform:"scale(1)"
+          }
+        }
+      },
+      animation: {
+        sizeAnim: "sizeAnim 3s ease-in-out infinite",
+        
+                  },
     },
   },
   plugins: [],

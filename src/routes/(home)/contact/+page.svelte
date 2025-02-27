@@ -12,7 +12,7 @@
     let email:string|null = null;
     let message:string|null = null;
     export let form: ActionData;
-    console.log('form fronend',form)
+    
 </script>
 <Banners />
 <div class="bg-primary sm:grid sm:grid-cols-2">

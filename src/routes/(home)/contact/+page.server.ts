@@ -12,8 +12,7 @@ export const actions: Actions = {
         const number = formData.get('number');
         const email = formData.get('email');
         const message = formData.get('message');
-        console.log(formData);
-        console.log(name,number,email,message)
+        
         const errors: Record<string, unknown> = {}
         if (!email) {
 			// return fail(400, { email, missing: true });

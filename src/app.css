@@ -11,6 +11,12 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
   }
+
+  @layer base {
+    body {
+      @apply bg-primary box-border
+    }
+  }
   
   @layer components {
     .max-container {
@@ -18,9 +24,31 @@
       margin: 0 auto;
     }
   
-    .input {
+    /* .input {
       @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
+    } */
+    .input-form {
+      @apply shadow  border rounded w-full py-2 px-3 focus:outline-none 
     }
+    .input-label{
+      @apply text-white-400 sm:text-2xl
+    }
+    .input-div{
+      @apply my-2 py-5 border-b-2 border-black
+     } 
+    .data-wrapper{
+      @apply flex md:text-2xl m-1 py-1 
+     } 
+    .data-cell{
+      @apply py-1 px-2
+     } 
+    .profile-btn{
+      @apply my-4 hover:text-white-400
+     } 
+    
+
+      
+    
   }
   
   @layer utilities {
@@ -35,40 +63,53 @@
     .menu-btn {
       @apply hover:bg-primary-dark hover:text-white px-3
     }
-    .input-form {
-      @apply shadow  border rounded w-full py-2 px-3 focus:outline-none 
+
+    .btn-second {
+      @apply bg-primary-compliment text-2xl py-2 px-6 rounded-full text-white-400 hover:-translate-y-1 transition-transform
+    }
+    .center-col{
+      @apply flex flex-col justify-center items-center
     }
 
-    .padding {
+    .admin-menu{
+      @apply w-52 h-20 flex justify-center items-center rounded-2xl text-2xl bg-primary-dark m-6 text-center text-white-400 shadow-3xl
+    }
+
+
+
+    
+
+    
+    /* .padding {
       @apply sm:px-16 px-8 sm:py-24 py-12;
-    }
+    } */
   
-    .padding-x {
+    /* .padding-x {
       @apply sm:px-16 px-8;
-    }
+    } */
   
-    .padding-y {
+    /* .padding-y {
       @apply sm:py-24 py-12;
-    }
+    } */
   
-    .padding-l {
+    /* .padding-l {
       @apply sm:pl-16 pl-8;
-    }
+    } */
   
-    .padding-r {
+    /* .padding-r {
       @apply sm:pr-16 pr-8;
-    }
+    } */
   
-    .padding-t {
+    /* .padding-t {
       @apply sm:pt-24 pt-12;
-    }
+    } */
   
-    .padding-b {
+    /* .padding-b {
       @apply sm:pb-24 pb-12;
     }
-  
-    .info-text {
+   */
+    /* .info-text {
       @apply font-montserrat text-slate-gray text-lg leading-7;
-    }
+    } */
   }
   
